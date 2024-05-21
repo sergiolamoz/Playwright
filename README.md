@@ -26,7 +26,7 @@ npm ci -g allure-commandline
 
 1. Clone the repo using below URL
 ```
-git@github.com:sergiolamoz/Playwright.git
+git clone git@github.com:sergiolamoz/Playwright.git
 ```
 2. Navigate to folder and install npm packages using:
 ```
