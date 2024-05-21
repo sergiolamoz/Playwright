@@ -1,0 +1,24 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "Demo project TS+Playwright use allure reports and page factory",
+  "author": "Sergey Novikov",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.12.12"
+  },
+  "dependencies": {
+    "allure-playwright": "^2.15.1",
+    "rimraf": "^5.0.7"
+  },
+  "scripts": {
+    "debug": "npx playwright test --debug",
+    "test": "npx playwright test --project=chromium",
+    "test:iphone": "npx playwright test --workers=5 --project=iphone",
+    "test:android": "npx playwright test --workers=5 --project=android",
+    "test:visual": "npx playwright test --workers=7 --project=visual",
+    "test:updateVisual": "npx playwright test /visual-comparsion --update-snapshots --workers=7",
+    "report": "npx allure serve allure-results"
+  }
+}
