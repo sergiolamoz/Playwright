@@ -15,7 +15,6 @@
   "scripts": {
     "debug": "npx playwright test --debug",
     "test": "npx playwright test --project=chromium",
-    "test:iphone": "npx playwright test --workers=5 --project=iphone",
     "test:android": "npx playwright test --workers=5 --project=android",
     "test:visual": "npx playwright test --workers=7 --project=visual",
     "test:updateVisual": "npx playwright test /visual-comparsion --update-snapshots --workers=7",

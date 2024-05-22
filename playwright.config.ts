@@ -1,9 +1,8 @@
 import { defineConfig, devices } from '@playwright/test';
 
-/**
- * See https://playwright.dev/docs/test-configuration.
- */
 export default defineConfig({
+  //Global Setup to run before all tests
+  globalSetup: './global-setup',
   testDir: './tests',
   timeout: 60 * 1000 * 3,
   retries: 2,
@@ -37,11 +36,6 @@ export default defineConfig({
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
-    },
-
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
     },
     {
       name: 'android',

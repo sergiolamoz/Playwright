@@ -32,3 +32,7 @@ git clone git@github.com:sergiolamoz/Playwright.git
 ```
 npm install
 ```
+3. Install playwright browsers
+```
+npm playwright install
+```
